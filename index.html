@@ -1,0 +1,148 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <div class="vlakenwyt">
+      <h1 class="title" id="title">vlakenWyt Survey Form</h1>
+      <p class="description" id="description">
+        Thank you for taking the time to help us improve the game
+      </p>
+    </div>
+    <form class="survey-form" id="survey-form">
+      <div class="form-group">
+        <label class="font-weight" id="name-label" for="name">Name</label>
+        <input
+          class="form-control margin-top"
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label class="font-weight" id="email-label" for="email">Email</label>
+        <input
+          class="form-control margin-top"
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label class="font-weight" id="number-label" for="number">Age</label>
+        <input
+          class="form-control margin-top"
+          id="number"
+          type="number"
+          name="age"
+          min="10"
+          max="99"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p class="font-weight">
+          Which option best describes your current role?
+        </p>
+        <select class="form-control" id="dropdown" name="" required>
+          <option disabled selected value>Select current role</option>
+          <option value="pos1">Carry</option>
+          <option value="pos2">Mid Core</option>
+          <option value="pos3">Offlaner</option>
+          <option value="pos4">Semi-support</option>
+          <option value="pos5">Main-support</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p class="font-weight">Would you recommend vlakenWyt to a friend?</p>
+        <label
+          ><input
+            class="input-radio"
+            name="user-recommend"
+            type="radio"
+            value="definitely"
+          />Definitely</label
+        >
+        <label
+          ><input
+            class="input-radio"
+            name="user-recommend"
+            type="radio"
+            value="maybe"
+          />Maybe</label
+        ><label
+          ><input
+            class="input-radio"
+            name="user-recommend"
+            type="radio"
+            value="not-sure"
+          />Not sure</label
+        >
+      </div>
+      <div class="form-group">
+        <p class="font-weight">What is your favorite feature of vlakenWyt</p>
+        <select class="form-control" id="most-like" name="mostlike" required>
+          <option disabled selected value>Select an option</option>
+          <option value="challenging">Challenging</option>
+          <option value="gameplay">Gameplay</option>
+          <option value="skin">Skins</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p class="font-weight">What would you like to see improved?</p>
+        <label>
+          <input
+            name="prefer"
+            value=""
+            class="input-checkbox"
+            type="checkbox"
+          />Matchmaking
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value=""
+            class="input-checkbox"
+            type="checkbox"
+          />Gameplay
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value=""
+            class="input-checkbox"
+            type="checkbox"
+          />Skins
+        </label>
+        <label>
+          <input
+            name="prefer"
+            value=""
+            class="input-checkbox"
+            type="checkbox"
+          />Heroes
+        </label>
+      </div>
+      <div class="form-group">
+        <p class="font-weight">Any comments or suggestions</p>
+        <textarea
+          class="input-textarea"
+          id="comments"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+      <div class="form-group">
+        <button class="submit-button" id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+body {
+  background-color: #171717;
+}
+
+label {
+  display: flex;
+}
+
+.vlakenwyt {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.description {
+  font-style: italic;
+}
+
+.survey-form {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: #28282b;
+  border-radius: 10px;
+  border: solid 1px white;
+  padding: 30px;
+  display: block;
+  margin: 15px auto;
+  max-width: 600px;
+}
+
+.form-control {
+  color: gray;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.font-weight {
+  font-weight: bold;
+}
+
+.margin-top {
+  margin: 10px 0px;
+}
+
+.input-textarea {
+  font-weight: bold;
+  width: 100%;
+  height: 10%;
+  margin-bottom: 20px;
+  padding: 10px 0px 0px 10px;
+}
+
+.submit-button {
+  color: white;
+  font-weight: bold;
+  background-color: rgba(23, 23, 23, 1);
+  border: solid white 1px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: rgba(23, 23, 23, 0.5);
+}
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 25px;
+  }
+  .survey-form {
+    margin: 15px 20px;
+  }
+}
